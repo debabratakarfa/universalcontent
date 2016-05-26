@@ -1,0 +1,4 @@
+tests/
+bin/
+.travis.yml
+phpunit.xml.dist
