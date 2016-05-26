@@ -2,3 +2,4 @@ tests/
 bin/
 .travis.yml
 phpunit.xml.dist
+.bash_profile
