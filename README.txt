@@ -39,13 +39,21 @@ you put the stable version, in order to eliminate any doubt.
 
 == Installation ==
 
-This section describes how to install the plugin and get it working.
+#Modern Way:
 
-e.g.
+Go to the WordPress Dashboard "Add New Plugin" section.
 
-1. Upload `common-content.php` to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Place `<?php do_action('plugin_name_hook'); ?>` in your templates
+Search For "Common Content".
+
+Install, then Activate it.
+
+#Old Way:
+
+Upload the universalcontent folder to the /wp-content/plugins/ directory
+
+Activate the plugin through the 'Plugins' menu in WordPress.
+
+You are good to go!
 
 == Frequently Asked Questions ==
 
