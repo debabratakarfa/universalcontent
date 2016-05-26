@@ -97,6 +97,11 @@ class Common_Content {
 	private function load_dependencies() {
 
 		/**
+		* Load the framework
+		*/
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'framework/titan-framework-embedder.php';
+
+		/**
 		 * The class responsible for orchestrating the actions and filters of the
 		 * core plugin.
 		 */
@@ -151,6 +156,7 @@ class Common_Content {
 
 		$plugin_admin = new Common_Content_Admin( $this->get_plugin_name(), $this->get_version() );
 
+		$this->loader->add_action( 'tf_create_options', $plugin_admin, 'commoncontent_panel_dashboard' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
 
